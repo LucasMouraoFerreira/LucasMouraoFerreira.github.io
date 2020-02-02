@@ -1,3 +1,43 @@
+/*==Navbar transparent to solid==*/
+function checkScroll() {
+  if ($(window).scrollTop() >= 300) {
+    $(".navbar").addClass("solid");
+  } else {
+    $(".navbar").removeClass("solid");
+  }
+}
+/*==Solid class when toggled==*/
+$(document).ready(function() {
+  checkScroll();
+  $(window).scroll(checkScroll);
+  $(".navbar-toggler").click(function() {
+    if ($(window).scrollTop() <= 300) {
+      $(".navbar").toggleClass("solid-toggle");
+    }
+  });
+});
+/*==Close mobile menu==*/
+$(document).on("click", 'a[href!="#"]', function(event) {
+  event.preventDefault();
+  $(".navbar-toggler").addClass("collapsed");
+  $("#navbarResponsive").removeClass("show");
+  setTimeout(function() {
+    $("nav.navbar").removeClass("solid-toggle");
+  }, 300);
+  $("html, body").animate(
+    {
+      scrollTop: $($.attr(this, "href")).offset().top
+    },
+    1000
+  );
+});
+/*==Arrow down==*/
+$(document).ready(function() {
+  $(window).scroll(function() {
+    $("arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+});
+
 /*========== WAYPOINTS ANIMATION DELAY ==========*/
 //Original Resource: https://www.oxygenna.com/tutorials/scroll-animations-using-waypoints-js-animate-css
 $(function() {

@@ -1,1 +1,147 @@
+/*====RESETS====*/
 
+html {
+  padding: env(safe-area-inset);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #505962;
+}
+
+.text-theme {
+  color: #9965b3;
+}
+
+/*===Navigation===*/
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar {
+  padding: 0.7rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  transition: background-color 0.5s ease;
+}
+
+.navbar-nav li {
+  padding-right: 0.8rem;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #9965b3;
+}
+
+.custom-toggler-icon {
+  color: white;
+  font-size: 1.6rem;
+}
+
+button:focus,
+a:focus,
+a.btn:focus {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+
+button,
+a,
+a.btn {
+  transition: all 0.6s ease;
+}
+
+.navbar.solid,
+.navbar.solid-toggle {
+  background: rgba(0, 0, 0, 0.7) !important;
+  transition: background-color 1s ease;
+}
+/*==Landing page==*/
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+
+.home-wrap {
+  position: absolute;
+  height: 100%;
+  widows: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home-inner {
+  background-image: url("../images/person-sky-silhouette-night.jpg");
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  display: table;
+  will-change: transform;
+}
+
+/*==Landing page caption==*/
+.caption {
+  z-index: 1;
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.caption h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-size: 1.5rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 2rem;
+}
+
+.caption .btn-lg {
+  border-width: medium;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+}
+
+/*==Arrow down==*/
+.arrow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+}
+
+.down-arrow .svg-inline--fa {
+  color: white;
+  font-size: 2.2rem;
+  opacity: 0.4;
+  transition: all 0.6s ease;
+}
+
+.down-arrow .svg-inline--fa:hover {
+  opacity: 0.8;
+}
