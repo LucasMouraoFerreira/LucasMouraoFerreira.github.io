@@ -17,9 +17,9 @@ body {
 
 .offset::before {
   content: "";
-  height: 4rem;
+  height: 4.4rem;
   display: block;
-  margin-top: -4rem;
+  margin-top: -4.4rem;
 }
 
 /*===Navigation===*/
@@ -191,4 +191,23 @@ h3.heading {
 .btn-code:hover {
   color: white;
   background-color: #30ba44;
+}
+
+/*==Contact==*/
+.outer img {
+  height: 3.5rem;
+}
+
+.outer .svg-inline--fa {
+  color: white;
+  transition: all 0.6s ease;
+}
+
+.outer .svg-inline--fa:hover {
+  color: grey;
+}
+
+hr.socket {
+  border-top: 0.1rem solid #666b71;
+  width: 100%;
 }
