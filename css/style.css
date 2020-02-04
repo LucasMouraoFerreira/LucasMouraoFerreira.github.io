@@ -15,9 +15,16 @@ body {
   color: #9965b3;
 }
 
+.offset::before {
+  content: "";
+  height: 4rem;
+  display: block;
+  margin-top: -4rem;
+}
+
 /*===Navigation===*/
 .navbar-brand img {
-  height: 2rem;
+  height: 2.5rem;
 }
 
 .navbar {
@@ -144,4 +151,44 @@ a.btn {
 
 .down-arrow .svg-inline--fa:hover {
   opacity: 0.8;
+}
+
+/*==Portfolio==*/
+h3.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #9965b3;
+  margin: 0 auto 2rem;
+}
+
+.btn-visit {
+  background-color: white;
+  border-color: #5574f2;
+  color: #5574f2;
+  transition: all 0.6s ease;
+}
+
+.btn-visit:hover {
+  color: white;
+  background-color: #5574f2;
+}
+
+.btn-code {
+  background-color: white;
+  border-color: #30ba44;
+  color: #30ba44;
+  transition: all 0.6s ease;
+}
+
+.btn-code:hover {
+  color: white;
+  background-color: #30ba44;
 }
