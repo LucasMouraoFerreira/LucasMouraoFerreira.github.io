@@ -31,10 +31,19 @@ $(document).on("click", 'a[href!="#"]', function(event) {
     800
   );
 });
+
 /*==Arrow down==*/
 $(document).ready(function() {
   $(window).scroll(function() {
-    $("arrow").css("opacity", 1 - $(window).scrollTop() / 50);
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);
+  });
+});
+
+/*==Counter==*/
+$(document).ready(function() {
+  $(".counter").counterUp({
+    delay: 20,
+    time: 2500
   });
 });
 
