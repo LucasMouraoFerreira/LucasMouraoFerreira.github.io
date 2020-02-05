@@ -28,13 +28,13 @@ $(document).on("click", 'a[href!="#"]', function(event) {
     {
       scrollTop: $($.attr(this, "href")).offset().top
     },
-    1000
+    800
   );
 });
 /*==Arrow down==*/
 $(document).ready(function() {
   $(window).scroll(function() {
-    $("arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+    $("arrow").css("opacity", 1 - $(window).scrollTop() / 50);
   });
 });
 
