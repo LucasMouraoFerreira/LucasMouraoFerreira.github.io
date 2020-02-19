@@ -137,14 +137,14 @@
         </div>
 
         <div class="container">
-          <div class="row card-deck text-center px-lg-4 px-xl-3">
-            <div class="col-md-12 col-lg-6">
+          <div class="text-center px-lg-4 px-xl-3">
+            <div class="row card-deck">
               <div class="card mb-5">
                 <img class="card-img-top" src="..." alt="Card image cap" />
                 <div class="card-body">
                   <h5 class="card-title font-weight-bold">Fake Fish Store</h5>
                   <p class="card-text text-justify">
-                    Projeto de um e-commerce, em que é possivel realizar operações CRUD sobre as entidades, quando logado na conta administradora. Como cliente é possível, criar uma nova conta, comprar produtos e acessar ordens de pedido. O site também realiza o consumo da API do Google MAPS para mostrar localização da loja no mapa, web service dos correios para calcular frete, e realiza o processamento do pagamento pelo gateway Stripe.                    
+                    Projeto de um e-commerce, em que é possível realizar operações CRUD sobre as entidades, quando logado na conta administradora. Como cliente é possível, criar uma conta, comprar produtos e acessar ordens de pedido. O site também realiza o consumo da API do Google MAPS para mostrar a localização da loja no mapa, web service dos correios para calcular frete, e realiza o processamento do pagamento pelo gateway Stripe.                    
                   </p>
                   <p class="card-text text-justify">
                     <strong>Tecnologias utilizadas: </strong>C#, Asp.net Core MVC, Entity Framework, SQL Server, Javascript, HTML 5 + Razor, CSS 3 e Bootstrap 4.
@@ -163,7 +163,32 @@
                   ></a>
                 </div>
               </div>
-            </div>
+              <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 1 on md--></div>
+              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 1 on sm--></div>
+              <div class="card mb-5">
+                <img class="card-img-top" src="..." alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">O que tem de bão em BH?</h5>
+                  <p class="card-text text-justify">
+                    REST API que retorna lugares de Belo Horizonte. Com a API é possível utilizar os verbos Http POST, GET, PUT e DELETE sobre as entidades Place e Comment, realizar buscas por lugares com base no texto contido no nome ou descrição, região e avaliação média. Também é possível localizar lugares próximos de uma localização, passando como parâmetros uma distância máxima, a latitude e longitude de um ponto ou um endereço. No caso de receber um endereço, uma chamada para a API Geocoding do Google é realizada.  
+                  </p>
+                  <p class="card-text text-justify">
+                    Para evitar o mal uso da API, limitei o acesso a alguns métodos através da autenticação por JWT. Todos os métodos GET de /places e /comments e POST de /comments/addComment/{place_id} estão liberados para testes.
+                  </p>
+                  <p class="card-text text-justify">
+                    <strong>Tecnologias utilizadas: </strong> Java, Spring Boot 2, JWT, Spring Security, PostgreSQL, JPA, Maven,
+                    Swagger 2.
+                  </p>
+                  <p class="card-text text-justify">
+                    <strong>Deploy: </strong> Heroku.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-visit rounded-0 btn-lg mr-5">Documentação <i class="fas fa-globe"></i></a>
+                  <a href="#" class="btn btn-code rounded-0 btn-lg">Código <i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>           
           </div>
         </div>
 
