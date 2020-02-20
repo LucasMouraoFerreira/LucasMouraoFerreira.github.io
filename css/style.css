@@ -245,6 +245,14 @@ hr.socket {
   .caption .btn-lg {
     padding: 0.6rem 1.1rem;
   }
+
+  .btn-code {
+    font-size: 0.8rem;
+  }
+
+  .btn-visit {
+    font-size: 0.8rem;
+  }
 }
 
 /* Devices under 576px (sm) */
@@ -264,10 +272,10 @@ hr.socket {
   }
 
   .btn-code {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 
   .btn-visit {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 }
