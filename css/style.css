@@ -262,4 +262,12 @@ hr.socket {
     padding: 0.4rem 0.9rem;
     font-size: 0.9rem;
   }
+
+  .btn-code {
+    font-size: 1rem;
+  }
+
+  .btn-visit {
+    font-size: 1rem;
+  }
 }
