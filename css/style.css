@@ -192,6 +192,16 @@ h3.heading {
   color: white;
   background-color: #30ba44;
 }
+
+.portfolio-item img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+
+.portfolio-item img {
+  transition: transform 0.5s ease;
+}
+
 /*==About me==*/
 .loki-image {
   height: 10rem;
@@ -233,6 +243,10 @@ hr.socket {
     padding: 0.7rem 1.2rem;
     font-size: 1rem;
   }
+
+  .loki-image {
+    height: 9rem;
+  }
 }
 
 /* Devices under 768px (md) */
@@ -256,6 +270,14 @@ hr.socket {
 
   .btn-visit {
     font-size: 1rem;
+  }
+
+  .loki-image {
+    height: 7.5rem;
+  }
+
+  .loki-numbers {
+    transform: scale(0.85);
   }
 }
 
@@ -281,5 +303,13 @@ hr.socket {
 
   .btn-visit {
     font-size: 0.8rem;
+  }
+
+  .loki-image {
+    height: 6rem;
+  }
+
+  .loki-numbers {
+    transform: scale(0.7);
   }
 }

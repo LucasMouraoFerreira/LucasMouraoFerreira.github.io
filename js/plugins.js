@@ -16,6 +16,14 @@ $(document).ready(function() {
     }
   });
 });
+/*===LightBox===*/
+$(document).ready(function() {
+  lightbox.option({
+    resizeDuration: 600,
+    wrapAround: true,
+    imageFadeDuration: 500
+  });
+});
 /*==Close mobile menu==*/
 $(document).on("click", 'a[href*="#"]', function(event) {
   event.preventDefault();
