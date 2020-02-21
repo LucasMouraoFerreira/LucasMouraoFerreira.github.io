@@ -192,6 +192,10 @@ h3.heading {
   color: white;
   background-color: #30ba44;
 }
+/*==About me==*/
+.loki-image {
+  height: 10rem;
+}
 
 /*==Contact==*/
 .outer img {
@@ -247,11 +251,11 @@ hr.socket {
   }
 
   .btn-code {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .btn-visit {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -272,10 +276,10 @@ hr.socket {
   }
 
   .btn-code {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .btn-visit {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
