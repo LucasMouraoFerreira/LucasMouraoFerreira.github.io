@@ -207,6 +207,10 @@ h3.heading {
   height: 10rem;
 }
 
+.myPhoto {
+  height: 18rem;
+}
+
 /*==Contact==*/
 .outer img {
   height: 3.5rem;
@@ -247,6 +251,10 @@ hr.socket {
   .loki-image {
     height: 9rem;
   }
+
+  .myPhoto {
+    height: 16rem;
+  }
 }
 
 /* Devices under 768px (md) */
@@ -274,6 +282,10 @@ hr.socket {
 
   .loki-image {
     height: 7.5rem;
+  }
+
+  .myPhoto {
+    height: 13.5rem;
   }
 
   .loki-numbers {
@@ -307,6 +319,10 @@ hr.socket {
 
   .loki-image {
     height: 6rem;
+  }
+
+  .myPhoto {
+    height: 11rem;
   }
 
   .loki-numbers {
